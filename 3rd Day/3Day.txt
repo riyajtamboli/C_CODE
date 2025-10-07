@@ -1,0 +1,55 @@
+1)A shopkeeper buys a TV set for Rs. 3500 and sells it at a profit of 27%. Apart from this a VAT of 12.7% and Service Charge is 3.87% is charged. 
+	 Write a C program to Display total selling price, profit along with vat and service charge.
+         To calculate the selling price, profit, VAT, and service charge, follow these steps:
+
+         1) Calculate the selling price:
+
+            Selling Price = Cost Price + Profit
+
+            Selling Price = Rs. 3500 + (27% of Rs. 3500)
+
+
+         2) Calculate the profit:
+
+            Profit = Selling Price - Cost Price
+
+
+         3) Calculate VAT:
+
+            VAT = 12.7% of Selling Price
+
+
+         4) Calculate Service Charge:
+
+            Service Charge = 3.87% of Selling Price
+===================================================================================================================================================
+2)Write a 'C' program to check and print that given number is even or odd using ternary operator.
+--------
+
+Sample input : int a = 10
+Sample Output : EVEN
+
+Sample input : int a = 125
+Sample Output : ODD
+=================================================================================================================================================================
+3)  Write a 'C' program to reverse the given 3 digit number without using control statments.
+
+Sample input : int a = 123;
+Sample Output : reverse =  321
+==================================================================================================================================================================
+4) Using ternary operator write a C program for a bookstore named "BookWorld" that calculates the discounted amount based on the total purchase amount. 
+
+The store provides three types of discounts to its customers:
+-> If the total purchase amount is less than Rs. 1000, there is no discount.
+-> If the total purchase amount is between Rs. 1000 and Rs. 5000 (inclusive), customers get a 5% discount on the total purchase amount.
+-> If the total purchase amount is greater than Rs. 5000, customers get a 10% discount on the total purchase amount.
+
+Sample input  : purchase amount = 999
+Sample output : total amount = 999
+
+Sample input  : purchase amount = 2000
+Sample output : total amount including 5% discount = 1900
+
+Sample input  : purchase amount = 10000
+Sample output : total amount including 10% discount = 9000
+

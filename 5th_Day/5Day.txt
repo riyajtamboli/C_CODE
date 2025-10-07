@@ -1,0 +1,364 @@
+📘 Programming Question
+_______________________________________________________________________
+Problem Statement
+
+Write a C program to find the maximum of three numbers entered by the user.
+You must use the nested ternary operator (?:) for the calculation.
+
+Requirements
+The program should:
+
+> Accept three integers as input.
+> Use the nested ternary operator to determine the largest number.
+> Display the maximum number as output.
+
+Restrictions:
+_____________________________________
+|- Do not use if, else, switch, or loops.
+|- Only the ternary operator (?:) should be used for comparison logic.
+
+Input Format
+______________
+|- Enter three integers separated by spaces.
+
+Output Format
+________________
+Print the largest number in the format:
+
+Maximum = <value>
+
+Sample Test Cases
+-------------------
+✅ Test Case 1
+
+Input:
+10 20 15
+
+Output:
+Maximum = 20
+
+✅ Test Case 2
+
+Input:
+-5 -10 -2
+
+Output:
+Maximum = -2
+
+✅ Test Case 3
+
+Input:
+100 50 200
+
+Output:
+Maximum = 200
+
+✅ Test Case 4
+
+Input:
+25 25 10
+
+Output:
+Maximum = 25
+______________________________________________________________________
+📘 Programming Question
+Problem Statement
+
+Write a C program to design a simple calculator that evaluates an arithmetic expression entered by the user in the form:
+a op b
+
+
+Where:
+
+a and b are integers.
+op is an operator (+, -, *, /).
+The program should use only the ternary operator (?:) to perform operation selection.
+
+Requirements
+________________
+Accept input as:
+
+number operator number
+
+
+Example: 10 + 20
+
+Perform the operation based on the operator:
+
++ → Addition
+
+- → Subtraction
+
+* → Multiplication
+
+/ → Division (integer division)
+
+Validation:
+
+If division by zero occurs, print:
+
+Division by zero not allowed
+
+
+If an invalid operator is entered, print:
+
+Invalid operator
+
+
+Restrictions:
+
+Use only ternary operators (?:).
+
+Do not use if, else, switch, or loops.
+
+Input Format
+
+A single expression in the form:
+
+a op b
+
+
+(with spaces between numbers and operator).
+
+Output Format
+
+Display the result of the expression, or an error message for invalid inputs.
+
+Sample Test Cases
+✅ Test Case 1
+
+Input:
+
+10 + 20
+
+
+Output:
+
+Result = 30
+
+✅ Test Case 2
+
+Input:
+
+15 - 8
+
+
+Output:
+
+Result = 7
+
+✅ Test Case 3
+
+Input:
+
+12 * 4
+
+
+Output:
+
+Result = 48
+
+✅ Test Case 4
+
+Input:
+
+40 / 5
+
+
+Output:
+
+Result = 8
+
+✅ Test Case 5 (Division by Zero)
+
+Input:
+
+50 / 0
+
+
+Output:
+
+Division by zero not allowed
+
+✅ Test Case 6 (Invalid Operator)
+
+Input:
+
+25 % 4
+
+
+Output:
+
+Invalid operator
+__________________________________________________________________________________
+📘 Programming Question
+Problem Statement
+
+Write a C program to calculate the electricity bill based on the following rules:
+
+Units Consumed	Rate per Unit
+0 – 100	₹1.5
+101 – 300	₹2.0
+> 300	₹3.0
+
+The user will input the number of units consumed.
+
+The program should calculate the total bill using only nested ternary operators.
+
+Do not use if, else, switch, or loops.
+
+Input Format
+
+An integer value representing the number of units consumed.
+
+Output Format
+
+Display the bill amount in the format:
+
+Bill = <amount>
+
+Constraints
+
+Units consumed ≥ 0
+
+Use only ternary operators (?:) for decision-making.
+
+Sample Test Cases
+✅ Test Case 1
+
+Input:
+
+50
+
+
+Output:
+
+Bill = 75.00
+
+✅ Test Case 2
+
+Input:
+
+120
+
+
+Output:
+
+Bill = 210.00
+
+✅ Test Case 3
+
+Input:
+
+300
+
+
+Output:
+
+Bill = 550.00
+
+✅ Test Case 4
+
+Input:
+
+450
+
+
+Output:
+
+Bill = 1000.00
+___________________________________________________________________
+Programming Question
+Problem Statement
+
+Write a C program to calculate Simple Interest (SI) or Compound Interest (CI) based on user choice.
+
+The user will input:
+
+Principal amount (P)
+
+Rate of Interest (R in %)
+
+Time (T in years)
+
+A character choice → S for Simple Interest, C for Compound Interest
+
+The program should use only the ternary operator (?:) to decide which formula to apply.
+
+Formulas:
+
+Simple Interest:
+
+𝑆𝐼=𝑃×𝑅×𝑇/100
+
+Compound Interest:
+
+𝐶𝐼=𝑃×((1+𝑅/100)𝑇−1)
+
+If the user enters any other character, display "Invalid choice".
+
+Input Format
+Principal Rate Time Choice
+
+Output Format
+
+If Choice = S → print Simple Interest = <value>
+
+If Choice = C → print Compound Interest = <value>
+
+Otherwise → print Invalid choice
+
+Constraints
+
+Principal > 0
+
+Rate > 0
+
+Time > 0
+
+Choice must be either S/s or C/c
+
+Sample Test Cases
+✅ Test Case 1
+
+Input:
+
+1000 5 2 S
+
+
+Output:
+
+Simple Interest = 100.00
+
+✅ Test Case 2
+
+Input:
+
+1000 5 2 C
+
+
+Output:
+
+Compound Interest = 102.50
+
+✅ Test Case 3
+
+Input:
+
+2000 10 3 s
+
+
+Output:
+
+Simple Interest = 600.00
+
+✅ Test Case 4
+
+Input:
+
+1500 8 2 X
+
+
+Output:
+
+Invalid choice

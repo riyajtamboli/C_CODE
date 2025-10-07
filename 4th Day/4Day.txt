@@ -1,0 +1,98 @@
+Question 1: Product Discount Calculator
+____________________________________________
+Problem Statement:
+____________________________
+Write a C program to calculate the final price of a product after applying a discount.
+
+The user will enter the product price and discount percentage.
+
+If the discount is valid (0–100) and price is greater than 0, then display the final price.
+
+Otherwise, display “Invalid input!”.
+
+Sample Input / Output:
+
+Input:
+Enter product price: 1000
+Enter discount percentage: 10
+
+Output:
+Final Price = 900.00
+
+Question 2: Machine and Engine Check
+______________________________________________
+Problem Statement:
+_________________________
+Write a C program to check whether a machine is ready for operation.
+
+Input 1 if the machine is working, 0 if not.
+
+Input 1 if the engine is working, 0 if not.
+
+Based on input, display the correct status message:
+
+Both working → “Machine is ready for operation”
+
+Machine working, engine not working → “Engine problem detected”
+
+Machine not working, engine working → “Machine structure not ready”
+
+Both not working → “Both machine and engine not working”
+
+Sample Input / Output:
+
+Input:
+Machine = 1
+Engine = 0
+
+Output:
+Engine problem detected
+
+Question 3: Aadhaar Card Eligibility
+_______________________________________
+Problem Statement:
+___________________
+Write a C program to check Aadhaar card eligibility based on age.
+
+If age is less than or equal to 0 → “Invalid age input”
+
+If age is less than 5 → “Not eligible (minimum age is 5 years)”
+
+If age is 5 or above → “Eligible for Aadhaar card”
+
+Sample Input / Output:
+
+Input:
+Enter age: 4
+
+Output:
+Not eligible (minimum age is 5 years)
+
+Question 4: Driving License Eligibility
+_________________________________________
+Problem Statement:
+________________________
+Write a C program to check whether a person is eligible for a driving license.
+
+Input the age of the person.
+
+Input whether the person has Aadhaar card (1 = Yes, 0 = No).
+
+Conditions:
+
+If age < 18 → “Not eligible (must be 18+)”
+
+If age ≥ 18 and has Aadhaar → “Eligible for Driving License”
+
+If age ≥ 18 but no Aadhaar → “Aadhaar card required for license”
+
+If age ≤ 0 → “Invalid age input”
+
+Sample Input / Output:
+
+Input:
+Age = 20
+Has Aadhaar = 0
+
+Output:
+Aadhaar card required for license

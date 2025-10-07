@@ -1,0 +1,341 @@
+MCQ
+______________________________________________________
+1)Find the output of the given C program?
+#include<stdio.h>
+int main()
+{
+  int a;
+  a = 'a' > 'A';
+  printf("%d",a);
+  return 0;
+}
+=======================================================================
+2)Find the output of the given C program?
+
+int main() {
+int a = 3;
+int b = 4;
+int result = (a += b) * (b -= 2);
+printf("result = %d\n", result);
+return 0;
+}
+======================================================================
+3)What will be the output of this below program?
+
+#include<stdio.h>
+int main() {
+int a = 5, b = 10, c = 15;
+int result = !(a <= b) && !(b != c) && !(c >= a);
+printf("result = %d\n", result);
+return 0;
+}
+
+========================================================================
+4) What will be the output of this below program?
+
+#include<stdio.h>
+int main() {
+int a = 10;
+int b = 15;
+int c = a++ + b--;
+printf("a = %d, b = %d, c = %d\n", a, b, c);
+return 0;
+}
+==========================================================================
+5)What will be the output of this below program?
+
+#include<stdio.h>
+int main()
+{
+int a;
+a = 1, 2, 3;
+printf("%d", a);
+return 0;
+}
+============================================================================
+6)What will be the output of this below program?
+
+#include <stdio.h>
+int main()
+{
+    int a = 5, b = 5, c = 10, result;
+
+    result = (a == b) && (c > b);
+    printf(" %d \n", result);
+
+    result = (a == b) && (c < b);
+    printf(" %d \n", result);
+
+    result = (a == b) || (c < b);
+    printf(" %d \n", result);
+
+    return 0;
+}
+===========================================================================
+7) What will be the output of following program ?
+#include <stdio.h>
+  void main()
+  {   
+	printf("%d",printf("Hello\n"));
+  }
+
+===============================================================================
+8)Which of the following expressions will evaluate to true?
+
+int x = 0, y = -1, z = 5;
+
+a) (x || y) && z
+b) (x && y) || z
+c) !(x && y) && z
+d) All of the above
+===============================================================================
+9)What will be the output of the above program?
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 3, c, d;
+    c = a < b && a > 2;
+    d = a < b || b > 2;
+    printf("%d %d %d %d", a, b, c, d);
+    return 0;
+}
+==================================================================================
+10)What will be the output of the following code?
+#include <stdio.h>
+
+int main() {
+    int x = 1, y = 2;
+    printf(“%d%d”, x);
+    return 0;
+}
+================================================================================
+11)What will be the output of the following code?
+
+int x = 10, y = 20;
+int result = (x > y) ? ((x > 15) ? x : y) : ((y > 15) ? y : x);
+printf("%d", result);
+==============================================================================
+12)What will be the output of the following code?
+
+ int a = 5, b = 0, c = 10;
+ (a && b || c)?printf("True"):printf("False");
+==============================================================================
+13)Which of the following is not a valid data type in C?
+
+a) int
+b) float
+c) string
+d) char
+==============================================================================
+14)Which header file is required to use the printf and scanf functions?
+
+a) stdlib.h
+b) stdio.h
+c) conio.h
+d) math.h
+===============================================================================
+15)What will be the output of this below program?
+
+#include<stdio.h>
+int main() {
+printf("%d ", 2 + 3 * 4 + 5 == 45);
+printf("%d ", 2 + 3 * 4 + 5 == 19);
+printf("%d ", (2 + 3) * (4 + 5) == 45);
+return 0;
+}
+
+
+_________________________________________________________________________________
+Que-1
+_______________
+📘 Programming Question
+Problem Statement
+
+Write a C program to calculate the grade of a student based on the marks obtained in 5 subjects.
+
+Requirements
+
+The program should:
+
+Accept marks of 5 subjects as input.
+
+Calculate the total and average marks.
+
+Determine the grade using the following criteria:
+
+Average Marks	Grade
+90 – 100	A
+75 – 89	        B
+60 – 74	        C
+45 – 59	        D
+Below 45	F
+
+Restrictions:
+
+You must use the ternary operator (?:) for grade calculation.
+
+Do not use if, else, switch, or loops.
+
+Validation:
+
+Marks must be between 0 and 100.
+
+If any mark is negative or greater than 100, print "Invalid input" and stop execution.
+
+Input Format
+
+Enter 5 integer values separated by spaces (each between 0 and 100).
+
+Output Format
+
+Print the total marks, average marks (2 decimal places), and the grade.
+
+Or, print "Invalid input" if marks are out of range.
+
+Test Cases
+✅ Test Case 1
+
+Input:
+
+95 90 85 92 88
+
+
+Output:
+
+Total = 450
+Average = 90.00
+Grade = A
+
+✅ Test Case 2
+
+Input:
+
+70 65 60 62 68
+
+
+Output:
+
+Total = 325
+Average = 65.00
+Grade = C
+
+✅ Test Case 3 (Fail Case)
+
+Input:
+
+30 40 25 35 28
+
+
+Output:
+
+Total = 158
+Average = 31.60
+Grade = F
+
+✅ Test Case 4 (Invalid Input Case)
+
+Input:
+
+90 85 -10 95 80
+
+
+Output:
+
+Invalid input
+
+_____________________________________________________________________________
+Que-2
+______________
+Problem Statement
+
+Write a C program to calculate the ranking of a cricketer based on his performance in 5 matches.
+
+Requirements
+
+The program should:
+
+Accept the runs scored in 5 matches as input.
+
+Calculate the total runs and the average runs.
+
+Determine the ranking using the following criteria:
+
+Average Runs	Ranking
+90 – 100	Excellent
+70 – 89	        Very Good
+50 – 69	        Good
+30 – 49	        Average
+Below 30	Poor
+
+Restrictions:
+
+You must use the ternary operator (?:) for ranking calculation.
+
+Do not use if, else, switch, or loops.
+
+Validation:
+
+Runs in each match must be 0 or more.
+
+If any run value is negative, print "Invalid input" and stop execution.
+
+Input Format
+
+Enter 5 integer values separated by spaces (runs scored in each match).
+
+Output Format
+
+Print the total runs, average runs (2 decimal places), and the ranking.
+
+Or, print "Invalid input" if any run is negative.
+
+Test Cases:
+
+✅ Test Case 1
+
+Input:
+
+120 85 90 100 95
+
+
+Output:
+
+Total Runs = 490
+Average Runs = 98.00
+Ranking = Excellent
+
+✅ Test Case 2
+
+Input:
+
+60 55 70 65 50
+
+Output:
+
+Total Runs = 300
+Average Runs = 60.00
+Ranking = Good
+
+✅ Test Case 3
+
+Input:
+
+25 20 15 30 18
+
+Output:
+
+Total Runs = 108
+Average Runs = 21.60
+Ranking = Poor
+
+✅ Test Case 4 (Invalid Input Case)
+
+Input:
+
+80 -10 75 60 90
+
+Output:
+
+Invalid input
+
+
